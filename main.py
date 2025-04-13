@@ -13,4 +13,4 @@ DOGS = [
 
 @app.get("/")
 async def name(request: Request):
-    return templates.TemplateResponse("home.html", {"request": request, "name": "Emilio Garro Rangel"})
+    return templates.TemplateResponse("home.html", {"request": request, "name": "Emilio Garro Rangel", "dogs": DOGS})
