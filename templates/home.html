@@ -8,5 +8,17 @@
     <body>
         <h1>Home</h1>
         <p>{{ name }}</p>
+        <table class="table"    >
+            <tr>
+                <th>Name</th>
+                <th>Breed</th>
+            </tr>
+            {% for dog in dogs %}
+                <tr>
+                    <td>{{ dog.name }}</td>
+                    <td>{{ dog.breed }}</td>
+                </tr>
+            {% endfor %}
+        </table>
     </body>
 </html>
