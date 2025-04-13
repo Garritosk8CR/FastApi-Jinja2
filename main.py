@@ -5,6 +5,11 @@ app = FastAPI()
 
 templates = Jinja2Templates(directory="templates")
 
+DOGS = [
+    {"name": "Fido", "breed": "Mixed"},
+    {"name": "Rover", "breed": "Golden Retriever"},
+    {"name": "Spot", "breed": "Chihuahua"},
+]
 
 @app.get("/")
 async def name(request: Request):
